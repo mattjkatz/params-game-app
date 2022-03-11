@@ -1,0 +1,16 @@
+### Name Game!
+GET http://localhost:3000/name_game/matt
+
+
+### Number Game!
+GET http://localhost:3000/number_game/73
+
+
+### It's time to get posty
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+  "username": "hugh",
+  "password": "swordfish"
+}

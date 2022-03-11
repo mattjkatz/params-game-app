@@ -29,4 +29,14 @@ class ParamsController < ApplicationController
     end
   end
 
+  def login
+    input_username = params["username"]
+    input_password = params["password"]
+    if input_username == "hugh" && input_password == "swordfish"
+      render json: "Valid credentials."
+    else
+      render json: "Invalid credentials."
+    end
+  end
+
 end
